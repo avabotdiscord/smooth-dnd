@@ -233,7 +233,7 @@ export default (containers: IContainer[], maxScrollSpeed = maxSpeed) => {
 		}
 
 		if (draggableInfo) {
-			setScrollParams(animatorInfos, draggableInfo.mousePosition);
+			setScrollParams(animatorInfos, draggableInfo.position);
 
 			animatorInfos.forEach(animator => {
 				const { x, y } = animator.axisAnimations;
